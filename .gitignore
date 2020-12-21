@@ -1,0 +1,10 @@
+config.py
+.idea/
+Thumbs.db
+output.log
+qr.png
+tmp_order_info.html
+tmp_print_cookies.py
+tmp_timestamp.py
+__pycache__
+cookie
