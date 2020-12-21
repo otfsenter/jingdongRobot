@@ -81,6 +81,9 @@ def good_detail(skuId, area_id):
     cart_link = soup.find("a", id="InitCartUrl")['href']
     if cart_link[:2] == '//':  # '//cart.jd.com/gate.action?pid=5504364&pcount=1&ptype=1'
         cart_link = 'http:' + cart_link
+
+    driver.get(cart_link)
+
     good_data['cart_link'] = cart_link
 
     good_data['price'] = good_price(skuId)
