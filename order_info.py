@@ -61,7 +61,7 @@ def order_info(skuId, submit=False):
 
     # soup = BeautifulSoup(rs.text, "lxml")
     soup = BeautifulSoup(rs, "html.parser")
-    logger.info(str(soup.prettify()))
+    # logger.info(str(soup.prettify()))
 
     # order summary
     payment = soup.find(id='sumPayPriceId').text  # TODO
@@ -102,7 +102,7 @@ def order_info(skuId, submit=False):
     }
     # print(data)
     order_url = 'http://trade.jd.com/shopping/order/submitOrder.action'
-    rp = requests.post(order_url, data=data, cookies=cookies, headers={
+    rp = requests.post(order_url, data=data, cookies=cookies_dict, headers={
         'Referer': 'https://trade.jd.com/shopping/order/getOrderInfo.action?rid=' + payload['rid'],
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36',
     })
