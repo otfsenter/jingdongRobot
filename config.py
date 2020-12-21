@@ -1,0 +1,12 @@
+
+eid = "C452CJL7GAXYB6QFFELUANP7ZCYSMV4QOLR5JN5LLPFAWNDGNM65KL66X3DRG33GOLT5C5I3BYAJTX3OMFC6GSBYOI"
+fp = "1388d727a5fd57ef61e010fe394e2789"
+
+
+my_sender = ''  # 邮件发送者
+my_pass = ''  # 邮件发送者邮箱密码
+my_user = ''
+
+skuId = '326467'
+area_id = '19_1607_40152_47420'
+
